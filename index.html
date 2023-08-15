@@ -23,8 +23,11 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+                
             }
+    
             body {
+                
                 scrollbar-width: none; /* FireFox */
                 -ms-overflow-style: none; /* IE/Edge */
             }
@@ -41,6 +44,9 @@
                         
                         font-size: 2rem!important;
                     }
+                    img{
+                        width: 80% !important;
+                    }
                 }
 
                 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -56,7 +62,7 @@
                 /* Medium devices (landscape tablets, 768px and up) */
                 @media only screen and (min-width: 768px) {
                     html{
-                        font-size: 80%;
+                        font-size: 83%;
                     }
                 }
 
@@ -70,7 +76,7 @@
                 /* Extra large devices (large laptops and desktops, 1200px and up) */
                 @media only screen and (min-width: 1200px) {
                     html {
-                        font-size: 110%;
+                        font-size: 80%;
                     }
                 }
         </style>
@@ -78,12 +84,12 @@
     <body class="d-flex flex-column h-100" style="margin-top: 75px;">
         <main class="flex-shrink-0" id="">
             <!-- Navigation-->
-            <nav class="navbar navbar-dark navbar-expand-lg shadow-lg flex-column nav-pills fixed-top p-3" style="background-color: rgba(0, 217, 255, 0.7);">
+            <nav class="navbar navbar-dark navbar-expand-lg shadow-lg flex-column nav-pills fixed-top" style="background-color: rgba(0, 217, 255, 0.7);">
                 <div class="container-fluid d-flex">
-                    <a class="navbar-brand w-25" href="index.html" ><img class="img-fluid" src="resource/assets/btb-light.png" alt="" ></a>
+                    <a class="navbar-brand w-25" href="index.html" ><img class="img-fluid overflow-x " src="resource/assets/btb-light.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon p-4"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder fs-4">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder fs-4 p-3">
                             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="#course">Course</a></li>
@@ -99,9 +105,8 @@
                         <div class="col-xxl-6 col-sm-12 mb-5" data-aos="fade-right" data-aos-duration="1000">
                             <!-- Header profile picture-->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0 mt-lg-0">
-                                <div class="profile bg-info bg-gradient">
-                                    <img class="profile-img " src="resource/assets/sync.svg" alt="img-company"  width="500px" height="300px" >
-            
+                                <div class="profile bg-info bg-gradient d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid " src="resource/assets/sync.svg" alt="img-company"  width="300px" height="300px" >
                                 </div>
                             </div>
                         </div>
@@ -125,8 +130,8 @@
             <section class="bg-light d-flex align-items-center" style="height: 100vh;" id="about">
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-around align-items-center">   
-                        <div class="col-lg-5 col-md-6 col-sm-8 d-flex justify-content-center">
-                            <img class="img-fluid" src="resource/assets/aboutus.png" alt="aboutus.jpg" data-aos="zoom-out"  data-aos-duration="1000">
+                        <div class="col-md-auto col-sm-auto d-flex justify-content-center">
+                            <img class="img-fluid w-0 p-0 m-0" src="resource/assets/aboutus.png" alt="aboutus.jpg" data-aos="zoom-out"  data-aos-duration="1000" width="auto">
                         </div>
                         <div class="d-flex col-xxl-4 col-xl-5 col-lg-5 col-md-5 col-sm-6">
                             <div class="text-center" data-aos="zoom-out"  data-aos-duration="1000">
@@ -321,12 +326,12 @@
                             </div>
                             <div class="col-lg-7 col-sm-6 col-xl-5 mx-1 p-3" data-aos="zoom-in-up" data-aos-duration="1000">
                                 <div class="col-sm-12 col-xl-12 mx-1 p-4">
-                                    <div class="col-sm-12 col-lg-11 col-xl-12 mb-2 ">
+                                    <div class="col-sm-12 col-lg-11 col-xl-12 mb-2 fs-5 ">
                                         <h2 class="mb-3 fs-1 fw-bold">Anda bisa menghubungi kami</h2>
                                         <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia repudiandae accusamus cum blanditiis, ea, consectetur ipsa est dolores consequatur quod, consequuntur vero dicta quos placeat id odit voluptatibus explicabo.</p>
                                         <div class="col-sm-12 d-flex m-0">
-                                            <div class="feature bg-info bg-info-to-secondary text-white rounded-3 p-4"><i class="bi bi-geo-alt"></i></div>
-                                            <div class="col-sm-7 mx-3">
+                                            <div class="feature bg-info bg-info-to-secondary text-white rounded-3 p-4"><i class="bi bi-geo-alt "></i></div>
+                                            <div class="col-sm-7 mx-3 fs-5">
                                                 <p class="fw-bold p-0 m-0">Our location</p>       
                                                 <p>Indonesia Kalimantan selatan banjarmasin</p>   
                                             </div>    
@@ -335,7 +340,7 @@
                                      <div class="col-sm-12 col-lg-11 col-xl-12 mb-2">
                                         <div class="col-sm-12 d-flex m-0">
                                             <div class="feature bg-info bg-info-to-secondary text-white rounded-3 p-4"><i class="bi bi-telephone"></i></div>
-                                            <div class="col-sm-7 mx-3">
+                                            <div class="col-sm-7 mx-3 fs-5">
                                                 <p class="fw-bold p-0 m-0">Phone number</p>       
                                                 <p>(+62) 812 345 678</p>   
                                             </div>    
@@ -345,7 +350,7 @@
                                         <div class="col-sm-5 d-flex m-0">
                                             <div class="feature bg-info bg-info-to-secondary text-white rounded-3 p-4"><i class="bi bi-envelope"></i></div>
                                             <div class="col-sm-7 mx-3">
-                                                <p class="fw-bold p-0 m-0">Email address</p>       
+                                                <p class="fw-bold p-0 m-0 fs-5">Email address</p>       
                                                 <p>btb123@gmai.com</p>   
                                             </div>    
                                         </div>
@@ -403,7 +408,7 @@
             </section>
         </main>
         <!-- Footer-->
-        <footer class="text-center text-white bg-info">
+        <footer class="text-center text-white bg-info" >
             <div class="container">
               <section class="mt-5">
                 <div class="row text-center d-flex justify-content-center pt-5">
